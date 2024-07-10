@@ -1,0 +1,474 @@
+#main-banner {
+  position: relative;
+}
+
+#main-banner .banner-image {
+  height: 768px;
+  background-image: url("/static/images/main/banner.png");
+  position: relative;
+}
+
+#main-banner .banner-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#main-banner .banner-text p {
+  font-size: 4rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#main-banner .banner-text h2 {
+  font-size: 6rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 140%;
+}
+
+#main-banner .banner-text h2 .yellow-text {
+  color: #fddb32;
+  font-weight: 900;
+}
+
+#main-banner .sale-code-more {
+  height: 56px;
+  padding: 0 60px;
+  background-color: #fddb32;
+  border-radius: 40px;
+  position: absolute;
+  line-height: 56px;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -28px;
+}
+
+#main-banner .sale-code-more p {
+  font-size: 2.4rem;
+}
+
+#main-banner .sale-code-more p span {
+  font-weight: 700;
+}
+
+#main-banner .sale-code-more p img {
+  width: 32px;
+  vertical-align: text-top;
+  margin-left: 8px;
+}
+
+#section1 .sec-text {
+  margin: 100px 0;
+}
+
+#section1 .sec-text p {
+  font-size: 2.6rem;
+  color: #f00202;
+  text-align: center;
+}
+
+#section1 .sec-text p b {
+  font-weight: 700;
+  color: #f00202;
+}
+
+#section1 .sale-code-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin: 0 -24px;
+  gap: 100px 0;
+}
+
+#section1 .sale-code-list .sale-code-item {
+  flex: 0 1 448px;
+  padding: 0 12px;
+  text-align: center;
+}
+
+#section1 .sale-code-list .sale-code-info {
+  background-image: url("/static/images/main/ticket.png");
+  background-size: 100% 100%;
+  height: 179px;
+  height: 147px;
+  text-align: center;
+}
+
+#section1 .sale-code-info {
+  position: relative;
+}
+
+#section1 .sale-code-info h3 {
+  color: #fff;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  padding: 0 20px;
+  word-break: keep-all;
+  margin-bottom: 10px;
+}
+
+#section1 .sale-code-info p {
+  font-size: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 15px;
+  transform: translateX(-50%);
+  width: calc(100% - 70px);
+  border-top: 1px solid #d9d9d9;
+  padding-top: 10px;
+}
+
+#section1 .sale-code-copy {
+  margin-top: 16px;
+}
+
+#section1 .sale-code-copy button {
+  background-color: #fddb32;
+  border-radius: 50px;
+  font-weight: 700;
+  height: 58px;
+  width: 383px;
+  max-width: 100%;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+#section1 .sale-code-copy button img {
+  margin-left: 8px;
+}
+
+.sec-title {
+  text-align: center;
+}
+
+.sec-title h2 {
+  font-size: 4.5rem;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.sec-title h2 b {
+  font-weight: 900;
+}
+
+.sec-title p {
+  font-size: 2.4rem;
+}
+
+#section2 {
+  padding: 100px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+#section2 .sec-wrap {
+  background-color: #fddb32;
+  padding: 100px 142px 100px;
+  border-radius: 50px;
+}
+
+#section2 .sec-title {
+  margin-bottom: 90px;
+}
+
+#section2 .sec-title h2 {
+}
+
+#section2 .sec-list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 24px 0;
+}
+
+#section2 .sec-item .box {
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px 50px;
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  gap: 0 75px;
+}
+
+#section2 .sec-item .icon img {
+  width: 110px;
+}
+
+#section2 .sec-item .sec-info h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+#section2 .sec-item .sec-info p {
+  font-size: 2.4rem;
+}
+
+#section3 .sec-wrap {
+  background-color: #1e243a;
+  padding: 140px 0 180px;
+  margin-top: -50px;
+}
+
+#section3 .sec-title {
+  display: flex;
+  align-items: center;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+#section3 .sec-title h2 {
+  color: #fff;
+}
+
+#section3 .sec-title h2 b {
+  color: #fff;
+  font-weight: 900;
+}
+
+#section3 .sec-title p {
+  width: 900px;
+  max-width: 100%;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#section3 .sec-list {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-top: 115px;
+  padding: 0 140px;
+  gap: 0 25px;
+}
+
+#section3 .sec-item {
+  flex: 1 1 33.33%;
+}
+
+#section3 .sec-item .box {
+  border-radius: 16px;
+  background-color: #fff;
+  height: 358px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: visible;
+}
+
+#section3 .sec-item .title {
+  position: absolute;
+  left: 50%;
+  top: -26px;
+  transform: translateX(-50%);
+  height: 52px;
+  background-color: #fddb32;
+  border-radius: 12px;
+  width: 286px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#section3 .sec-item .title h3 {
+  font-size: 3.2rem;
+  font-weight: 500;
+  line-height: 52px;
+}
+
+#section3 .sec-item .box p {
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+#section3 .sec-item .box p b {
+  font-weight: 700;
+}
+
+#section4 .sec-wrap {
+  background-color: #fff;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  margin-top: -60px;
+  padding-top: 130px;
+}
+
+#section4 .sec-title {
+  margin-bottom: 90px;
+}
+
+#section4 .sec-title h2 {
+  font-weight: 900;
+}
+
+#section4 .sec-title h2 .blue-text {
+  color: #40a8c4;
+  font-weight: 900;
+}
+
+#section4 .qna-list {
+  display: flex;
+  flex-flow: column wrap;
+  gap: 60px 0;
+  padding: 0 140px;
+}
+
+#section4 .qna-item .title {
+  margin-bottom: 36px;
+}
+
+#section4 .qna-item .title img {
+  width: 43px;
+  height: 45px;
+}
+
+#section4 .qna-item .title h3 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  display: flex;
+  gap: 0 27px;
+}
+
+#section4 .qna-item .text {
+  background-color: rgba(64, 168, 196, 0.3);
+  padding: 24px 70px;
+  border-radius: 16px;
+}
+
+#section4 .qna-item .text p {
+  font-size: 1.8rem;
+  line-height: 220%;
+}
+
+#section4 .qna-item .text p .red-text {
+  color: #f00202;
+}
+
+#section4 .qna-item .text p .red-text a {
+  text-decoration: underline !important;
+  color: #f00202;
+}
+
+.fee-information {
+  margin: 60px 0 40px;
+  text-align: center;
+}
+
+.fee-information p {
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+
+@media (max-width: 1200px) {
+  #main-banner .banner-image {
+    height: 300px;
+  }
+
+  #main-banner .banner-text {
+    width: 100%;
+  }
+  #main-banner .banner-text p {
+    font-size: 2.4rem;
+  }
+  #main-banner .banner-text h2 {
+    font-size: 3rem;
+  }
+
+  #main-banner .sale-code-more {
+    display: none;
+    padding: 0 8px;
+    height: 40px;
+    bottom: -20px;
+  }
+
+  #main-banner .sale-code-more p {
+    font-size: 14px;
+  }
+
+  #section1 .sec-text {
+    margin: 40px 0;
+  }
+
+  #section1 .sale-code-list {
+    gap: 15px 0;
+    margin: 0;
+  }
+
+  #section1 .sale-code-list .sale-code-item {
+    width: 100%;
+  }
+
+  #section2 .sec-title {
+    margin-bottom: 40px;
+  }
+
+  #section2 .sec-wrap {
+    padding: 40px 10px;
+    border-radius: 0;
+  }
+
+  #section2 .sec-item .box {
+    padding: 0;
+    flex-flow: column wrap;
+    padding: 20px 0;
+  }
+
+  #section2 .sec-item .box .icon {
+    margin-bottom: 20px;
+  }
+
+  #section2 .sec-item .box .sec-info {
+    text-align: center;
+  }
+
+  #section3 .sec-list {
+    flex-flow: column wrap;
+    padding: 0 10px;
+    gap: 50px 0;
+    margin-top: 60px;
+  }
+
+  #section3 .sec-item {
+    flex: 1 1;
+    width: 100%;
+  }
+
+  #section3 .sec-item .box {
+    height: auto;
+    padding: 50px 0 30px;
+  }
+
+  #section4 .sec-wrap {
+    padding: 60px 0;
+  }
+
+  #section4 .qna-list {
+    padding: 0 10px;
+    gap: 20px 0;
+  }
+
+  #section4 .qna-item .title {
+    margin-bottom: 10px;
+  }
+
+  #section4 .qna-item .text {
+    padding: 10px;
+  }
+
+  #section4 .qna-item .text p {
+    line-height: 150%;
+  }
+
+  .fee-information {
+    margin: 0 0 30px;
+  }
+}

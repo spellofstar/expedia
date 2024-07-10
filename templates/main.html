@@ -1,0 +1,717 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>익스피디아</title>
+
+    <link
+      rel="stylesheet"
+      href="{% static 'js_lib/bootstrap-4.6.2-dist/css/bootstrap.min.css' %}"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/default.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/main.css' %}" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="container">
+          <div class="hd-wrap">
+            <div id="logo">
+              <h1>
+                <a href="/"><img src="{% static 'images/logo.png' %}" alt="익스피디아" /></a>
+              </h1>
+            </div>
+
+            <div id="main-menu">
+              <ul>
+                <li><a href="/boardList">게시판</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="contents">
+        <div id="main-banner">
+          <div class="banner-image">
+            <div class="banner-text">
+              <p>익스피디아 최대 할인코드</p>
+
+              <h2>
+                지금 바로 <span class="yellow-text">익스피디아</span>에서
+                주는<br />
+                <span class="yellow-text">{{ month }}월 최대 할인코드</span>를 받아보세요!
+              </h2>
+            </div>
+          </div>
+
+          <div class="sale-code-more">
+            <p>
+              <span>익스피디아</span> 할인코드 보러가기
+              <img src="{% static 'images/icons/arrow-down.png' %}" alt="할인코드 보러가기" />
+            </p>
+          </div>
+        </div>
+
+        <div id="section">
+          <div id="section1">
+            <div class="container">
+              <div class="sec-text">
+                <p>
+                  배너를 통한 홈페이지 내에서 할인코드를 확인 후
+                  적용해주세요.<br />
+                  <b>{{ month }}월 중 최대 할인혜택!</b> 결제 페이지에서 적용가능합니다.
+                </p>
+              </div>
+
+              <div class="sale-code-list">
+                <div class="sale-code-item">
+                  <div class="sale-code-info">
+                    <h3>전 상품 최대 할인</h3>
+
+                    <p>만료일 {{ month }}월 30일 까지</p>
+                  </div>
+
+                  <div class="sale-code-copy">
+                    <button type="button">
+                      코드 복사하기<img
+                        src="{% static 'images/icons/down.png' %}"
+                        alt="코드 복사"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="sale-code-item">
+                  <div class="sale-code-info">
+                    <h3>{{ month }}월 특가 상품 바로가기</h3>
+
+                    <p>만료일 {{ month }}월 30일 까지</p>
+                  </div>
+
+                  <div class="sale-code-copy">
+                    <button type="button">
+                      코드 복사하기<img
+                        src="{% static 'images/icons/down.png' %}"
+                        alt="코드 복사"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="sale-code-item">
+                  <div class="sale-code-info">
+                    <h3>전 항공권 5% 할인</h3>
+
+                    <p>만료일 {{ month }}월 30일 까지</p>
+                  </div>
+
+                  <div class="sale-code-copy">
+                    <button type="button">
+                      코드 복사하기<img
+                        src="{% static 'images/icons/down.png' %}"
+                        alt="코드 복사"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="sale-code-item">
+                  <div class="sale-code-info">
+                    <h3>전 항공권 5% 할인</h3>
+
+                    <p>만료일 {{ month }}월 30일 까지</p>
+                  </div>
+
+                  <div class="sale-code-copy">
+                    <button type="button">
+                      코드 복사하기<img
+                        src="{% static 'images/icons/down.png' %}"
+                        alt="코드 복사"
+                      />
+                    </button>
+                  </div>
+                </div>
+
+                <div class="sale-code-item">
+                  <div class="sale-code-info">
+                    <h3>전 항공권 5% 할인</h3>
+
+                    <p>만료일 {{ month }}월 30일 까지</p>
+                  </div>
+
+                  <div class="sale-code-copy">
+                    <button type="button">
+                      코드 복사하기<img
+                        src="{% static 'images/icons/down.png' %}"
+                        alt="코드 복사"
+                      />
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section2">
+            <div class="container">
+              <div class="sec-wrap">
+                <div class="sec-title">
+                  <h2><b>익스피디아</b>는 어떤 플랫폼 인가요?</h2>
+                </div>
+
+                <div class="sec-list">
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="icon">
+                        <img
+                          src="{% static 'images/main/platform_1.png' %}"
+                          alt="다양한 서비스 제공"
+                        />
+                      </div>
+
+                      <div class="sec-info">
+                        <h3>다양한 서비스 제공</h3>
+
+                        <p>
+                          익스피디아는 항공권, 호텔, 렌터카, 패키지 여행 등
+                          다양한 여행 서비스를 제공합니다. 이는 여행을 계획하는
+                          데 필요한 모든 요소를 한 곳에서 처리할 수 있도록
+                          도와줍니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="icon">
+                        <img
+                          src="{% static 'images/main/platform_2.png' %}"
+                          alt="가격 경쟁력"
+                        />
+                      </div>
+
+                      <div class="sec-info">
+                        <h3>가격 경쟁력</h3>
+
+                        <p>
+                          익스피디아는 다양한 여행 상품에 대해 가격 경쟁력을
+                          유지합니다. 할인 프로모션, 특가 상품 등을 제공하여
+                          여행자들이 합리적인 가격에 여행을 즐길 수 있도록
+                          합니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="icon">
+                        <img
+                          src="{% static 'images/main/platform_3.png' %}"
+                          alt="패키지 여행 제공"
+                        />
+                      </div>
+
+                      <div class="sec-info">
+                        <h3>패키지 여행 제공</h3>
+
+                        <p>
+                          익스피디아는 항공권과 호텔을 함께 예약할 수 있는
+                          패키지 여행을 제공합니다. 이를 통해 여행 경비를 절약할
+                          수 있으며, 여행 계획을 간편하게 만들어 줍니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="icon">
+                        <img
+                          src="{% static 'images/main/platform_4.png' %}"
+                          alt="신속한 예약 시스템"
+                        />
+                      </div>
+
+                      <div class="sec-info">
+                        <h3>신속한 예약 시스템</h3>
+
+                        <p>
+                          익스피디아의 예약 시스템은 신속하고 사용자
+                          친화적입니다. 간편한 검색 및 예약 과정을 통해
+                          여행자들이 빠르게 여행을 계획할 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="icon">
+                        <img
+                          src="{% static 'images/main/platform_5.png' %}"
+                          alt="신뢰성 있는 리뷰"
+                        />
+                      </div>
+
+                      <div class="sec-info">
+                        <h3>신뢰성 있는 리뷰</h3>
+
+                        <p>
+                          익스피디아는 실제 여행자들의 리뷰를 제공하여 호텔,
+                          항공편 등에 대한 정보를 확인할 수 있도록 도와줍니다.
+                          이를 통해 여행자들은 신뢰할 만한 정보를 기반으로 여행
+                          계획을 세울 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section3">
+            <div class="container">
+              <div class="sec-wrap">
+                <div class="sec-title">
+                  <h2><b>익스피디아</b>는 어떤 장점이 있을까요?</h2>
+                  <p>
+                    익스피디아는 항공편, 호텔, 렌터카, 패키지 여행 등 다양한
+                    여행 서비스를 한 곳에서 제공합니다. 이를 통해 여행자들은
+                    여러 사이트를 돌아다니지 않고도 편리하게 여행 일정을 계획할
+                    수 있습니다.
+                  </p>
+                </div>
+
+                <div class="sec-list">
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="title">
+                        <h3>다양한 선택</h3>
+                      </div>
+
+                      <div class="text">
+                        <p>
+                          익스피디아는 항공권, 호텔, 렌터카, 관광 명소 등 다양한
+                          여행 서비스를 제공하여 여행자들이 원하는 모든 것을 한
+                          곳에서 찾을 수 있습니다. <br />
+                          <br />
+                          <b>경쟁가격</b>: 익스피디아는 다양한 여행 업체와
+                          협력하여 경쟁력 있는 가격을 제공합니다. 이를 통해
+                          여행자들은 가장 합리적인 가격으로 여행을 계획할 수
+                          있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="title">
+                        <h3>리뷰 및 평가</h3>
+                      </div>
+
+                      <div class="text">
+                        <p>
+                          익스피디아는 사용자들이 호텔, 항공편, 렌터카 등에 대한
+                          리뷰를 남길 수 있는 플랫폼을 제공합니다. 이를 통해
+                          다른 여행자들의 경험을 참고하여 최적의 선택을 할 수
+                          있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="sec-item">
+                    <div class="box">
+                      <div class="title">
+                        <h3>패키지 여행</h3>
+                      </div>
+
+                      <div class="text">
+                        <p>
+                          익스피디아는 항공권과 호텔, 렌터카 등을 결합한 패키지
+                          여행을 제공합니다. 이를 통해 여행 비용을 절약하고
+                          편리하게 여행 일정을 계획할 수 있습니다.<br />
+                          <br />
+                          <b>사용자 친화적 인터페이스</b>: 익스피디아의 웹사이트
+                          및 앱은 사용자 친화적이며 직관적인 인터페이스를
+                          제공하여 여행 계획을 쉽게 할 수 있습니다.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="section4">
+            <div class="container">
+              <div class="sec-wrap">
+                <div class="sec-title">
+                  <h2>
+                    익스피디아 <span class="blue-text">할인코드</span> FAQ
+                  </h2>
+                </div>
+
+                <div class="qna-list">
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="익스피디아는 무엇을 제공하나요?"
+                        />익스피디아는 무엇을 제공하나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        익스피디아는 항공편, 호텔, 렌터카, 크루즈, 패키지 여행
+                        등 다양한 여행 서비스를 제공하는 온라인 여행 예약
+                        플랫폼입니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="예약은 어떻게 진행했나요?"
+                        />예약은 어떻게 진행했나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        익스피디아 웹사이트나 모바일 앱을 통해 여행 일정과
+                        선호사항을 입력한 후, 검색 결과에서 원하는 옵션을
+                        선택하여 예약을 진행할 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="예약 취소 및 변경은 어떻게 하나요?"
+                        />예약 취소 및 변경은 어떻게 하나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        예약 취소 또는 변경은 예약한 항공편, 호텔 또는 다른
+                        서비스의 정책에 따라 달라질 수 있습니다. 익스피디아
+                        고객센터나 온라인 플랫폼을 통해 해당 예약의 취소 또는
+                        변경 절차를 확인할 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="결제방법은 무엇이 있나요?"
+                        />결제방법은 무엇이 있나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        익스피디아에서는 신용카드, 직불카드, 은행 이체 등 다양한
+                        결제 방법을 지원합니다. 결제 방법은 예약한 서비스에 따라
+                        다를 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="예약 확인서는 어떻게 받나요?"
+                        />예약 확인서는 어떻게 받나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        예약이 완료되면 익스피디아 웹사이트나 이메일로 예약
+                        확인서를 받을 수 있습니다. 또한 익스피디아 계정을 통해
+                        예약 상세 정보를 확인할 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="예약 문제 발생 시 어떻게 해야 하나요?"
+                        />예약 문제 발생 시 어떻게 해야 하나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        예약에 문제가 발생하거나 도움이 필요한 경우 익스피디아
+                        고객센터로 문의하여 도움을 받을 수 있습니다. 고객센터
+                        연락처는 웹사이트나 앱 내에서 확인할 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="익스피디아 포인트는 무엇이며, 어떻게 사용하나요?"
+                        />익스피디아 포인트는 무엇이며, 어떻게 사용하나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        익스피디아 포인트는 익스피디아에서 예약할 때 적립되는
+                        보상 포인트입니다. 이를 다음 여행 예약 시 할인으로
+                        사용할 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="항공편 예약 시 좌석 선택은 어떻게 하나요?"
+                        />항공편 예약 시 좌석 선택은 어떻게 하나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        항공편 예약 시에는 항공사의 정책에 따라 추가 요금이 있을
+                        수 있습니다. 일부 항공사는 예약 시에 좌석을 선택할 수
+                        있도록 옵션을 제공하고 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="더 자세한 정보를 어디서 확인할 수 있나요?"
+                        />더 자세한 정보를 어디서 확인할 수 있나요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        더 자세한 정보는
+                        <span class="red-text"
+                          >익스피디아 공식 웹사이트(<a
+                            href="www.expedia.com"
+                            target="_blank"
+                            >www.expedia.com</a
+                          >)</span
+                        >나 모바일 앱을 통해 확인할 수 있습니다. 또한 익스피디아
+                        고객센터로 문의하여 도움을 받을 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="익스피디아의 단점은 무엇인가요?"
+                        />익스피디아의 단점은 무엇인가요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        <b>1. 숨겨진 요금 미로</b>: 익스피디아 예약 시, 때로는
+                        예상치 못한 추가 요금이나 숨겨진 비용이 등장하여 예상
+                        가격을 파악하기 어렵게 만들 수 있습니다. 이러한 미로
+                        속에서 예약을 진행하는 것은 여행객에게 불편을 초래할 수
+                        있습니다.
+                        <br />
+                        <b>2. 유연성의 함정</b>: 변경이나 취소를 원할 경우,
+                        익스피디아는 제공업체의 정책에 따라 유연성이 제한될 수
+                        있습니다. 이는 여행 일정에 예상치 못한 문제가 발생했을
+                        때 여행객들을 귀찮게 할 수 있습니다.
+                        <br />
+                        <b>3. 고객 서비스의 시간 여행</b>: 익스피디아의 고객
+                        서비스가 때로는 느리거나 제한적일 수 있습니다. 이는
+                        여행객이 문제에 직면했을 때 신속한 해결을 기대하기
+                        어렵다는 것을 의미합니다.
+                        <br />
+                        <b>4. 정보의 믿음 여부</b>: 가끔 익스피디아의 예약
+                        시스템이 오류를 일으키거나 정보가 부정확할 수 있습니다.
+                        이는 여행객이 예약의 신뢰성에 대해 의문을 가질 수 있게
+                        만들 수 있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="익스피디아를 사용할때 주의해야 할 점은 무엇인가요?"
+                        />익스피디아를 사용할때 주의해야 할 점은 무엇인가요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        <b>· 정확한 정보 입력</b>: 예약을 진행할 때 개인 정보나
+                        여행 일정 등을 정확하게 입력해야 합니다. 잘못된 정보는
+                        예약의 오류나 문제를 발생시킬 수 있습니다.<br />
+                        <b>· 예약 취소 정책 확인</b>: 예약을 진행하기 전에 숙박
+                        시설의 예약 취소 정책을 주의 깊게 확인해야 합니다. 예약
+                        취소나 변경 시 발생할 수 있는 추가 용을 미리 알아두는
+                        것이 중요합니다. <br />
+                        <b>· 신뢰할 만한 리뷰 확인</b>: 숙박 시설을 선택할 때는
+                        신뢰할 만한 리뷰를 참고하여 결정하는 것이 좋습니다.
+                        사용자들의 경험을 토대로 숙박 시설의 품질을 판단할 수
+                        있습니다.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="qna-item">
+                    <div class="title">
+                      <h3>
+                        <img
+                          src="{% static 'images/icons/qna.png' %}"
+                          alt="익스피디아를 사용할때 주의해야 할 점은 무엇인가요?"
+                        />익스피디아를 사용할때 주의해야 할 점은 무엇인가요?
+                      </h3>
+                    </div>
+
+                    <div class="text">
+                      <p>
+                        <b>정확한 정보 입력</b> : 예약을 진행할 때 개인 정보나
+                        여행 일정 등을 정확하게 입력해야 합니다. 잘못된 정보는
+                        예약의 오류나 문제를 발생시킬 수 있습니다.<br />
+                        <b>예약 취소 정책 확인</b> : 예약을 진행하기 전에 숙박
+                        시설의 예약 취소 정책을 주의 깊게 확인해야 합니다. 예약
+                        취소나 변경 시 발생할 수 있는 추가 비용을 미리 알아두는
+                        것이 중요합니다.<br />
+                        <b>신뢰할 만한 리뷰 확인</b> : 숙박 시설을 선택할 때는
+                        신뢰할 만한 리뷰를 참고하여 결정하는 것이 좋습니다.
+                        사용자들의 경험을 토대로 숙박 시설의 품질을 판단할 수
+                        있습니다.<br />
+                        <b>가격 비교</b> : 항공편, 호텔, 렌터카 등 여행에 필요한
+                        서비스의 가격을 비교해보세요. 익스피디아는 다양한 공급
+                        업체와 협력하여 경쟁력 있는 가격을 제공하지만, 때로는
+                        다른 예약 사이트보다 높은 가격을 제공할 수 있습니다.
+                        따라서 여러 사이트를 비교하여 최상의 거래를
+                        찾아보세요.<br />
+                        <b>할인 및 프로모션 확인</b> : 익스피디아는 자주 할인
+                        혜택이나 프로모션을 제공합니다. 예약하기 전에 현재 진행
+                        중인 할인이나 프로모션을 확인하여 추가로 비용을 절약할
+                        수 있는지 확인해보세요.<br />
+                        <b>패키지 예약 검토</b> : 항공편과 호텔을 함께 예약하는
+                        패키지 특가를 검토해보세요. 종종 패키지 예약은 개별
+                        예약보다 더 저렴할 수 있으며, 편리한 여행 계획을 제공할
+                        수 있습니다.<br />
+                        <b>회원 혜택 활용</b> : 익스피디아의 회원 프로그램에
+                        가입하여 추가 혜택을 받을 수 있습니다. 회원 전용
+                        할인이나 프로모션을 활용하여 여행 예약 비용을 절감할 수
+                        있습니다.<br />
+                        <b>리뷰 확인</b> : 숙박 시설을 선택할 때는 사용자들의
+                        리뷰를 확인하여 숙소의 품질과 서비스를 파악해보세요.
+                        신뢰할 만한 리뷰를 참고하여 여행의 만족도를 높일 수
+                        있습니다.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="fee-information">
+          <p>
+            해당 페이지는 익스피디아 제휴마케팅 활동의 일환으로, 일정 수수료를
+            받을 수 있습니다.
+          </p>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="ft-wrap">
+            <div class="ft-top">
+              <div class="left-area">
+                <img src="{% static 'images/ft-logo.png' %}" alt="익스피디아 할인코드" />
+              </div>
+
+              <div class="right-area">
+                <div class="social-list">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/icons/twitter.png' %}" alt="트위터"
+                      /></a>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/icons/pinterest.png' %}"
+                          alt="핀터레스트"
+                      /></a>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/icons/instagram.png' %}"
+                          alt="인스타그램"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="copy-right">
+              <p>
+                &copy; 2023 트립 세일코드. All Right Reserved, TRIP-SALECODE
+                Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script src="/js_lib/bootstrap-4.6.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

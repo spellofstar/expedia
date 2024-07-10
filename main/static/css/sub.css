@@ -1,0 +1,61 @@
+#main-banner {
+  position: relative;
+}
+
+#main-banner .banner-image {
+  height: 450px;
+  background-image: url("/static/images/main/banner.png");
+  position: relative;
+}
+
+#main-banner .banner-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#main-banner .banner-text p {
+  font-size: 3.2rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+#main-banner .banner-text h2 {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 140%;
+}
+
+#main-banner .banner-text h2 .yellow-text {
+  color: #fddb32;
+  font-weight: 900;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.page-title h2 {
+  font-size: 4rem;
+  font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+  #main-banner .banner-image {
+    height: 300px;
+  }
+
+  #main-banner .banner-text {
+    width: 100%;
+  }
+  #main-banner .banner-text p {
+    font-size: 2.4rem;
+  }
+  #main-banner .banner-text h2 {
+    font-size: 3rem;
+  }
+}

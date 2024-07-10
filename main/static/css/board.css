@@ -1,0 +1,96 @@
+#board-page {
+  padding: 120px 0;
+}
+
+.board-list {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 -10px;
+  gap: 10px 0;
+}
+
+.board-list .board-item {
+  padding: 0 10px;
+  width: 25%;
+  cursor: pointer;
+}
+
+.board-list .board-image {
+  height: 220px;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.board-list .board-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.board-list .board-info {
+  padding: 10px 0;
+}
+
+.board-list .board-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.board-list .write-date {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+#board-view {
+  width: 1200px;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#board-view .board-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #efefef;
+  padding: 12px 0;
+}
+
+#board-view .board-top h2 {
+  font-size: 3.6rem;
+  font-weight: 600;
+}
+
+#board-view .board-top p {
+  font-size: 1.8rem;
+}
+
+#board-view .board-contents {
+  padding: 10px 0;
+}
+
+#board-view .board-contents p {
+  font-size: 1.4rem;
+}
+
+#board-view .board-contents img {
+  max-width: 100%;
+}
+
+@media (max-width: 767px) {
+  #board-page {
+    padding: 80px 0;
+  }
+
+  #board-view .board-top {
+    flex-flow: column wrap;
+    align-items: flex-start;
+  }
+
+  .board-list .board-item {
+    width: 100%;
+  }
+}

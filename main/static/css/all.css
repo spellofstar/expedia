@@ -1,0 +1,131 @@
+@font-face {
+  font-family: "Pretendard Variable";
+  font-style: normal;
+  src: url("/static/fonts/PretendardVariable.woff2") format("woff2-variations");
+}
+
+* {
+  font-family: "Pretendard Variable";
+  color: #1e243a;
+  word-break: keep-all;
+}
+
+header {
+  background-color: #1e243a;
+}
+
+header .hd-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 29px 24px;
+}
+
+header #main-menu ul li a {
+  font-size: 1.8rem;
+  color: #fff;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+}
+
+footer {
+  background-color: #1e243a;
+}
+
+footer .ft-wrap {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 140px;
+}
+
+footer .ft-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 0;
+}
+
+footer .ft-top .left-area img {
+  width: 270px;
+}
+
+footer .ft-top .social-list ul {
+  gap: 0 16px;
+}
+
+footer .ft-top .social-list ul li img {
+  width: 40px;
+}
+
+footer .copy-right {
+  margin: 20px 0 40px;
+}
+
+footer .copy-right p {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.pagination ul {
+  gap: 0 20px;
+  align-items: center;
+}
+
+.pagination ul li a {
+  font-size: 1.8rem;
+  color: #777;
+}
+
+.pagination ul li.active a {
+  color: #333;
+  font-weight: 700;
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 8px;
+  }
+
+  header .hd-wrap {
+    padding: 14px 0;
+  }
+
+  header #logo img {
+    width: 150px;
+  }
+
+  footer .ft-top {
+    padding-bottom: 20px;
+  }
+
+  footer .ft-top .left-area img {
+    width: 150px;
+  }
+
+  footer .ft-top .social-list ul li img {
+    width: 20px;
+  }
+
+  footer .ft-wrap {
+    padding: 0;
+  }
+
+  .pagination {
+    margin-top: 40px;
+  }
+}

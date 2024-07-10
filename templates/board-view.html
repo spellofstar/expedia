@@ -1,0 +1,132 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>익스피디아</title>
+
+    <link
+      rel="stylesheet"
+      href="{% static 'js_lib/bootstrap-4.6.2-dist/css/bootstrap.min.css' %}"
+    />
+
+    <link rel="stylesheet" href="{% static 'css/default.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/all.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/sub.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/board.css' %}" />
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        <div class="container">
+          <div class="hd-wrap">
+            <div id="logo">
+              <h1>
+                <a href="/"><img src="{% static 'images/logo.png' %}" alt="익스피디아" /></a>
+              </h1>
+            </div>
+
+            <div id="main-menu">
+              <ul>
+                <li><a href="/boardList">게시판</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div id="contents">
+        <div id="main-banner">
+          <div class="banner-image">
+            <div class="banner-text">
+              <p>익스피디아 최대 할인코드</p>
+
+              <h2>
+                지금 바로 <span class="yellow-text">익스피디아</span>에서
+                주는<br />
+                <span class="yellow-text">{{ month }} 최대 할인코드</span>를 받아보세요!
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <div id="board-view">
+          <div class="container">
+            <div class="board-top">
+              <h2>익스피디아 할인코드 안내</h2>
+              <p>2024.06.16</p>
+            </div>
+
+            <div class="board-contents">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Laboriosam quod aperiam iusto corporis fuga corrupti
+                exercitationem at reprehenderit in, laborum minus nam, deserunt
+                illum, numquam quisquam vitae aspernatur eveniet saepe! Sed
+                maiores odit dolorum? Nulla veniam aut ullam recusandae ipsum
+                officiis quae ex, est libero voluptates a rem eligendi? Ipsam,
+                quisquam dolorum harum quos maiores minus dolorem incidunt
+                praesentium! Sapiente. Facere dolorum, rerum nesciunt reiciendis
+                libero molestias iste, exercitationem magnam, minima odio
+                cupiditate. Magni ipsam aut, esse eum est doloribus. Ipsa iusto
+                ipsum quasi delectus. Vero omnis quibusdam rerum dolores.
+              </p>
+
+              <img src="https://picsum.photos/600" alt="게시글 이미지" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
+          <div class="ft-wrap">
+            <div class="ft-top">
+              <div class="left-area">
+                <img src="{% static 'images/ft-logo.png' %}" alt="익스피디아 할인코드" />
+              </div>
+
+              <div class="right-area">
+                <div class="social-list">
+                  <ul>
+                    <li>
+                      <a href="#"
+                        ><img src="{% static 'images/icons/twitter.png' %}" alt="트위터"
+                      /></a>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/icons/pinterest.png' %}"
+                          alt="핀터레스트"
+                      /></a>
+                    </li>
+
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="{% static 'images/icons/instagram.png' %}"
+                          alt="인스타그램"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="copy-right">
+              <p>
+                &copy; 2023 트립 세일코드. All Right Reserved, TRIP-SALECODE
+                Inc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+    <script src="{% static 'js_lib/bootstrap-4.6.2-dist/js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
